@@ -23,7 +23,7 @@ else
 switch (action)
 {
 	case "linedown":
-	Console.WriteLine("execute linedown advancement");
+	Console.WriteLine(">execute linedown advancement<");
 	numOfStartLine++;
 	numOfEndingLine++;
 	if (numOfEndingLine > totalNumOfLinesToDisplay)
@@ -32,13 +32,10 @@ switch (action)
 		numOfStartLine--;
 		errText = "End of Records";
 		}
-	Console.WriteLine(numOfStartLine);
-	Console.WriteLine(numOfEndingLine);
-	Console.WriteLine(errText);
 	break;
 	
 	case "lineup":
-	Console.WriteLine("execute lineup advancement");
+	Console.WriteLine(">execute lineup advancement<");
 	numOfStartLine--;
 	numOfEndingLine--;
 	if (numOfStartLine < 1)
@@ -47,13 +44,10 @@ switch (action)
 		numOfStartLine++;
 		errText = "Start of Records";
 		}
-	Console.WriteLine(numOfStartLine);
-	Console.WriteLine(numOfEndingLine);
-	Console.WriteLine(errText);
 	break;
 	
 	case "pagedown":
-	Console.WriteLine("execute pagedown advancement");
+	Console.WriteLine(">execute pagedown advancement<");
 	numOfStartLine = numOfStartLine + (numOfLinesOnPage - 1);
 	numOfEndingLine = numOfEndingLine + (numOfLinesOnPage - 1);
 	if (numOfEndingLine > totalNumOfLinesToDisplay)
@@ -62,13 +56,10 @@ switch (action)
 		numOfStartLine = numOfStartLine - numOfLinesOnPage;
 		errText = "End of Records";
 		}
-	Console.WriteLine(numOfStartLine);
-	Console.WriteLine(numOfEndingLine);
-	Console.WriteLine(errText);
 	break;
 	
 	case "pageup":
-	Console.WriteLine("execute pageup advancement");
+	Console.WriteLine(">execute pageup advancement<");
 	numOfStartLine = numOfStartLine - (numOfLinesOnPage - 1);
 	numOfEndingLine = numOfEndingLine - (numOfLinesOnPage - 1);
 	if (numOfStartLine < 1)
@@ -77,10 +68,9 @@ switch (action)
 		numOfStartLine = 1;
 		errText = "End of Records";
 		}
-	Console.WriteLine(numOfStartLine);
-	Console.WriteLine(numOfEndingLine);
-	Console.WriteLine(errText);
 	break;
 }
 
-
+Console.WriteLine("Starting Index Number:   " + numOfStartLine);
+Console.WriteLine("Ending Index Number:     " + numOfEndingLine);
+Console.WriteLine("Operation Status:            " + errText);
