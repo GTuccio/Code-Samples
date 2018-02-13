@@ -1,6 +1,5 @@
 <Query Kind="Statements" />
 
-
 string[,,,,] realEstate = new string[5,4,30,30,10];
 	
 int totalCycleCounter = 0;
@@ -46,21 +45,18 @@ for (i = 0; i < realEstate.GetLength(0); i++)   //should be 5 Owners
 					totalCycleCounter++;
 					totalM++;
 					realEstate[i,j,k,l,m] = ("Department-" + m);
-					Console.WriteLine(realEstate[i,j,k,l,m]);
-					Console.Write(i); Console.Write(j); Console.Write(k); Console.Write(l); Console.Write(m);
-					Console.ReadLine();						
+					//Console.WriteLine(realEstate[i,j,k,l,m]); 
+					//Console.Write(i); Console.Write(j); Console.Write(k); Console.Write(l); Console.Write(m); Console.Write("\n");
+					//Console.ReadLine();						
 				}
 			}
 		}
 	}
 }
 
-Console.WriteLine("Number of times through all loops: " + totalCycleCounter);
 Console.WriteLine("Number of Ms: " + totalM);
 Console.WriteLine("Number of Ls: " + totalL);
 Console.WriteLine("Number of Ks: " + totalK);
 Console.WriteLine("Number of Js: " + totalJ);
 Console.WriteLine("Number of Is: " + totalI);
-
-
-
+Console.WriteLine("Number of times through all loops: " + totalCycleCounter);
