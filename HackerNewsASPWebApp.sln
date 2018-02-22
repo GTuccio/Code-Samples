@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsASPWebApp", "HackerNewsASPWebApp\HackerNewsASPWebApp.csproj", "{EBC5A68B-2DD0-4CA2-81CA-6D04FE9C269D}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "HackerNewsASPWebApp.Azure1", "HackerNewsASPWebApp.Azure1\HackerNewsASPWebApp.Azure1.ccproj", "{4C0FDD80-1518-496C-B2AF-8E4AC00E1188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC5A68B-2DD0-4CA2-81CA-6D04FE9C269D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC5A68B-2DD0-4CA2-81CA-6D04FE9C269D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC5A68B-2DD0-4CA2-81CA-6D04FE9C269D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC5A68B-2DD0-4CA2-81CA-6D04FE9C269D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0FDD80-1518-496C-B2AF-8E4AC00E1188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0FDD80-1518-496C-B2AF-8E4AC00E1188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0FDD80-1518-496C-B2AF-8E4AC00E1188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0FDD80-1518-496C-B2AF-8E4AC00E1188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {624181DB-9F98-4D3E-A62F-81BC3C6C5D55}
+	EndGlobalSection
+EndGlobal
